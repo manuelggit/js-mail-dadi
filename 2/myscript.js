@@ -12,10 +12,14 @@ console.log(numB);
 
 sottrazione = numA - numB;
 
+document.getElementById('id').innerHTML = 'sono uguali!';
+
 console.log('uguali')
 
 if(sottrazione > 0) {
   console.log(numA + ' > ' + numB + ' : Vince il giocatore A');
+  document.getElementById('id').innerHTML = 'Vince il giocatore A';
 } else if (sottrazione < 0) {
   console.log(numA + ' < ' + numB + ' : Vince il giocatore B');
+  document.getElementById('id').innerHTML = 'Vince il giocatore B';
 }
