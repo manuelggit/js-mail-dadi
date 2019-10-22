@@ -33,15 +33,20 @@
 // }
 
 var numA = Math.floor((Math.random() * 6) + 1);
+document.getElementById('js_A').innerHTML = numA;
 
 var numB = Math.floor((Math.random() * 6) + 1);
+document.getElementById('js_B').innerHTML = numB;
 
 console.log('A:', numA, ' B:', numB);
 
 if(numA > numB) {
   console.log('Vince A');
+  document.getElementById('esito').innerHTML = 'Vince il giocatore A';
 } else if(numA < numB) {
-  console.log('Vince B')
+  console.log('Vince B');
+  document.getElementById('esito').innerHTML = 'Vince il giocatore B';
 } else {
-  console.log('Pareggio!')
+  console.log('Pareggio!');
+  document.getElementById('esito').innerHTML = 'Pareggio!';
 }
