@@ -1,25 +1,33 @@
 // Gioco dei dadi, chi fa di più vince;
 
+// definizione delle variabili
+
 var numA, numB, sottrazione
 
-numA = Math.floor((Math.random() * 6) + 1);
+// chiedo di lanciare i dadi al giocatore A
 
+function A() {
+  numA = Math.floor((Math.random() * 6) + 1);
+  document.getElementById("js_A").innerHTML = numA;
 console.log(numA);
+};
 
-numB = Math.floor((Math.random() * 6) + 1);
+// chiedo di lanciare i dadi al giocatore B
 
+function B() {
+  numB = Math.floor((Math.random() * 6) + 1);
+  document.getElementById("js_B").innerHTML = numB;
 console.log(numB);
+};
 
-sottrazione = numA - numB;
+// cosa succede in caso di pareggio
 
-document.getElementById('id').innerHTML = 'sono uguali!';
+// cosa succede se qualcuno vince
 
-console.log('uguali')
-
-if(sottrazione > 0) {
+if(numA > numB) {
   console.log(numA + ' > ' + numB + ' : Vince il giocatore A');
-  document.getElementById('id').innerHTML = 'Vince il giocatore A';
-} else if (sottrazione < 0) {
+  document.getElementById('esito').innerHTML = 'Vince il giocatore A';
+} else if (numA < numB) {
   console.log(numA + ' < ' + numB + ' : Vince il giocatore B');
-  document.getElementById('id').innerHTML = 'Vince il giocatore B';
+  document.getElementById('esito').innerHTML = 'Vince il giocatore B';
 }

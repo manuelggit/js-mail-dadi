@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: yellow;
+}
+
+#bottoni, #risultati {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px 0;
+}
+
+#A, #B, #numA, #numB {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 80px;
+  color: white;
+}
+
+#A, #numA {
+  background-color: red;
+}
+
+#B, #numB {
+  background-color: blue;
+}
+
+#A p, #B p, #js_A, #js_B {
+  margin: auto;
+}
+
+#esito {
+  display: flex;
+  justify-content: center;
+}
